@@ -21,6 +21,12 @@
                 cursor: pointer;
                 position: relative;
 
+                @media (max-width: 768px) {
+                    font-size: 15px;
+                    line-height: 25px;
+                    padding-right: 30px;
+                }
+
                 &::after {
                     content: '+';
                     position: absolute;
