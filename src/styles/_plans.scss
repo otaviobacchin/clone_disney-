@@ -18,6 +18,10 @@
             display: block;
         }
 
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            flex-wrap: wrap;
+        }
+
         &__item{
             text-align: center;
             padding: 60px 44px 44px;
@@ -29,6 +33,11 @@
                 padding: 0 30px 44px;
             }
 
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                padding: 20px 0 0 0;
+                margin-bottom: 50px;
+            }
+
             &:nth-child(2) {
                 background-image: url(../images/fundo_combo_plus.png);
                 background-repeat: no-repeat;
@@ -37,11 +46,19 @@
                 @media (max-width: 768px) {
                     padding-top: 60px;
                 }
+
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                    padding-top: 60px;
+                }
                 
             }
 
             img {
                 height: 83px;
+
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                    height: 100px;
+                }
             }
 
             strong {
@@ -52,7 +69,11 @@
     }
     
     p {
-        text-align: center; 
+        text-align: center;
+        
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            padding: 0px 44px;
+        }
     }
 }
 

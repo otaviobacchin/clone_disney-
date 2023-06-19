@@ -15,6 +15,14 @@
         background-repeat: no-repeat;
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        background-image: url(../images/hero_tablet.jpg);
+        padding-top: calc(50vw + 25px);
+        margin-top: -100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
     li {
         list-style: none;
     }
@@ -26,6 +34,10 @@
 
     &__content {
         max-width: 640px;
+        
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            max-width: 100%;
+        }
 
         &__branding {
             max-width: 320px;
@@ -38,10 +50,18 @@
 
         .title--small {
             margin-bottom: 64px;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                margin-bottom: 24px;
+            }
         }
 
         p {
             margin-bottom: 20px;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                margin-bottom: 60px;
+            }
 
             &:last-child {
                 margin-top: 60px;
